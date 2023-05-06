@@ -14,7 +14,7 @@
             "cStandard": "gnu17",
             "cppStandard": "gnu++14",
             "intelliSenseMode": "windows-gcc-x86"
-        }
+        }  
     ],
     "version": 4
 }
