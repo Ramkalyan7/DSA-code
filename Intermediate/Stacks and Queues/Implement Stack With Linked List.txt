@@ -1,0 +1,77 @@
+
+//code studio link : https://www.codingninjas.com/studio/problems/implement-stack-with-linked-list_630475?utm_source=youtube&utm_medium=affiliate&utm_campaign=parikh_youtube
+
+/****************************************************************
+ 
+    Following is the class structure of the Node class:
+
+        class Node
+        {
+        public:
+	        int data;
+	        Node *next;
+	        Node(int data)
+	        {
+		        this->data = data;
+		        this->next = NULL;
+	        }
+        };
+
+*****************************************************************/
+
+class Stack
+{
+    //Write your code here
+
+    int size;
+    Node *head;
+
+public:
+    Stack()
+    {
+        //Write your code here 
+        head=NULL;
+        int size=0;
+    }
+
+    int getSize()
+    {
+        //Write your code here
+        return size;
+    }
+
+    bool isEmpty()
+    {
+        //Write your code here 
+        return head==NULL; 
+
+    }
+
+    void push(int data)
+    {
+        //Write your code here
+        Node *temp=new Node(data);
+        temp->next=head;
+        head=temp;
+        size++;
+    }
+
+    void pop()
+    {
+        //Write your code here
+        if (head) {
+            Node *p=head;
+          head = head->next;
+          free(p);
+          size--;
+        }
+    }
+
+    int getTop()
+    {
+        //Write your code here
+        if(head)
+           return head->data;
+        return -1;
+    }
+};
