@@ -1,11 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-//LC : https://leetcode.com/problems/linked-list-cycle-ii/submissions/978624722/
-//SL : https://takeuforward.org/data-structure/detect-and-remove-loop-in-a-linked-list/
-//YT : https://www.youtube.com/watch?v=VxOFflTXlXo
-//YT : 
+// LC : https://leetcode.com/problems/linked-list-cycle-ii/submissions/978624722/
+// SL : https://takeuforward.org/data-structure/detect-and-remove-loop-in-a-linked-list/
+// YT : https://www.youtube.com/watch?v=VxOFflTXlXo
 
 class Node
 {
